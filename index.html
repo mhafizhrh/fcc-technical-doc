@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Tutorial</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header><h1>Python Tutorial</h1></header>
+        <ul>
+            <li><a href="#python_comments" class="nav-link">Python Comments</a></li>
+            <li><a href="#python_variables" class="nav-link">Python Variables</a></li>
+            <li><a href="#python_data_types" class="nav-link">Python Data Types</a></li>
+            <li><a href="#python_casting" class="nav-link">Python Casting</a></li>
+            <li><a href="#references" class="nav-link">References</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="python_comments">
+            <header>
+                <h2>Python Comments</h2>
+            </header>
+            <ul>
+                <li>Comments can be used to explain Python code.</li>
+                <li>Comments can be used to make the code more readable.</li>
+            </ul>
+            <p>Comments start with <code>#</code> will be ignored by Python:</p>
+            <pre>
+                <code>
+# print Hello World
+print("Hello World")
+                </code>
+            </pre>
+            <p>Comments can be placed at the end of line:</p>
+            <pre>
+                <code>
+print("Hello World") # print Hello World
+                </code>
+            </pre>
+            <p>Comments can be used to prevent Python from executing code:</p>
+            <pre>
+                <code>
+# print("Hello World 1")
+print("Hello World 2")
+                </code>
+            </pre>
+        </section>
+        <section class="main-section" id="python_variables">
+            <header>
+                <h2>Python Variables</h2>
+            </header>
+            <h3>Creating Variables</h3>
+            <ul>
+                <li>Variables are containers for storing data values.</li>
+            </ul>
+            <p>A variable is created the moment you first assign a value to it.</p>
+            <pre>
+                <code>
+x = 12
+y = "Velzkud"
+print(x)
+print(y)
+                </code>
+            </pre>
+            <p>Variable can even change type after they have been set.</p>
+            <pre>
+                <code>
+x = 20
+x = "Twelve"
+print(x)
+                </code>
+            </pre>
+            <h3>Variable Names</h3>
+            <p>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). Rules for Python variables:</p>
+            <ul>
+                <li>A variable name must start with a letter or the underscore character</li>
+                <li>A variable name cannot start with a number</li>
+                <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+                <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+                <li>A variable name cannot be any of the Python keywords.</li>
+            </ul>
+            <p>Legal Variable Name:</p>
+            <pre>
+                <code>
+myvar = "Velzkud"
+my_var = "Velzkud"
+_my_var = "Velzkud"
+myVar = "Velzkud"
+MYVAR = "Velzkud"
+myvar2 = "Velzkud"
+                </code>
+            </pre>
+            <p>Illegal Variable Name:</p>
+            <pre>
+                <code>
+2myvar = "Velzkud"
+my-var = "Velzkud"
+my var = "Velzkud"
+                </code>
+            </pre>
+        </section>
+        <section class="main-section" id="python_data_types">
+            <header>
+                <h2>Python Data Types</h2>
+            </header>
+            <ul>
+                <li>In programming, data type is important concept</li>
+                <li>Variable can store data of different types, and different types can do different things.</li>
+            </ul>
+            <p>Built-in data types:</p>
+            <table>
+                <tr>
+                    <td>Text Types</td>
+                    <td><code>str</code></td>
+                </tr>
+                <tr>
+                    <td>Numeric Types</td>
+                    <td><code>int</code>, <code>float</code>, <code>complex</code></td>
+                </tr>
+                <tr>
+                    <td>Sequence Types</td>
+                    <td><code>list</code>, <code>tuple</code>, <code>range</code></td>
+                </tr>
+                <tr>
+                    <td>Mapping Types</td>
+                    <td><code>dict</code></td>
+                </tr>
+                <tr>
+                    <td>Set Types</td>
+                    <td><code>set</code>, <code>frozenset</code></td>
+                </tr>
+                <tr>
+                    <td>Boolean Types</td>
+                    <td><code>bool</code></td>
+                </tr>
+                <tr>
+                    <td>Binary Types</td>
+                    <td><code>bytes</code>, <code>bytearray</code>, <code>memoryview</code></td>
+                </tr>
+                <tr>
+                    <td>None Types</td>
+                    <td><code>NoneType</code></td>
+                </tr>
+            </table>
+        </section>
+        <section class="main-section" id="python_casting">
+            <header>
+                <h2>Python Casting</h2>
+            </header>
+            <p>Casting in python is therefore done using constructor functions:</p>
+            <ul>
+                <li><code>int()</code> - constructs an integer number from an integer literal, a float literal (by removing all decimals), or a string literal (providing the string represents a whole number)</li>
+                <li><code>float()</code> - constructs a float number from an integer literal, a float literal or a string literal (providing the string represents a float or an integer)</li>
+                <li><code>str()</code> - constructs a string from a wide variety of data types, including strings, integer literals and float literals</li>
+            </ul>
+            <pre>
+                <code>
+x = int(2)      # x will be 2
+x = int(2.8)    # x will be 2
+x = int("2")    # x will be 2
+                </code>
+            </pre>
+        </section>
+        <section class="main-section" id="references">
+            <header>
+                <h2>References</h2>
+            </header>
+            <ul>
+                <li><a href="https://www.w3schools.com/python/python_comments.asp" target="_blank">W3Schools - Python Comments</a></li>
+                <li><a href="https://www.w3schools.com/python/python_variables.asp" target="_blank">W3Schools - Python Comments</a></li>
+                <li><a href="https://www.w3schools.com/python/python_datatypes.asp" target="_blank">W3Schools - Python Data Types</a></li>
+                <li><a href="https://www.w3schools.com/python/python_casting.asp" target="_blank">W3Schools - Python Casting</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
